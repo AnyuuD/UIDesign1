@@ -1,0 +1,284 @@
+body {
+  background: #cccccc;
+}
+
+#align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#stage {
+  width: 500px;
+  height: 900px;
+  margin: auto;
+  background: white;
+  position: relative;
+}
+
+#square {
+  width: 23px;
+  height: 15px;
+  background: #e3e3e3;
+  top: 394px;
+  left: 283px;
+  position: absolute;
+
+  /* uncomment to add keyframe animation */
+  /* animation: spin 2s infinite; */
+}
+
+#greenbook {
+  width: 173px;
+  height: 65px;
+  background: rgb(0, 255, 42);
+  top: 489px;
+  left: 168px;
+  position: absolute;
+
+  /* uncomment to add keyframe animation */
+  /* animation: spin 2s infinite; */
+}
+
+#yellowbook {
+  width: 175px;
+  height: 32px;
+  background: rgb(246, 255, 0);
+  top: 480px;
+  left: 168px;
+  position: absolute;
+}
+
+#brownbook {
+  width: 175px;
+  height: 13px;
+  background: rgb(203, 175, 135);
+  top: 480px;
+  left: 168px;
+  position: absolute;
+}
+
+#flowerbottle {
+  width: 82px;
+  height: 76px;
+  background: #e3e3e3;
+  border-radius: 150px;
+  top: 405px;
+  left: 254px;
+  position: absolute;
+}
+
+.leaf1 {
+  width: 38px;
+  height: 25px;
+  background: #336022;
+  border: 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  top: 346px;
+  left: 252px;
+  transform: rotate(60deg);
+  position: absolute;
+}
+
+.leaf2 {
+  width: 37px;
+  height: 59px;
+  background: #7d9772;
+  border: 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  top: 296px;
+  left: 289px;
+  transform: rotate(30deg);
+  position: absolute;
+}
+
+.leaf3 {
+  width: 48px;
+  height: 32px;
+  background: #336022;
+  border: 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  top: 310px;
+  left: 267px;
+  transform: rotate(80deg);
+  position: absolute;
+}
+
+.rhombus {
+  width: 0px;
+  height: 0px;
+  border-right: 200px solid #666666;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  position: absolute;
+  top: 500px;
+  left: 10%;
+}
+.rhombus:after {
+  content: "";
+  border-left: 200px solid #666666;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  position: absolute;
+  top: -60px;
+  left: 200px;
+}
+
+#bottomleftsquare {
+  width: 200px;
+  height: 600px;
+  background: rgb(141, 141, 141);
+  top: 560px;
+  left: 50px;
+  position: absolute;
+
+  /* uncomment to add keyframe animation */
+  /* animation: spin 2s infinite; */
+}
+#bottomrightsquare {
+  width: 200px;
+  height: 600px;
+  background: rgb(91, 91, 91);
+  top: 560px;
+  left: 250px;
+  position: absolute;
+
+  /* uncomment to add keyframe animation */
+  /* animation: spin 2s infinite; */
+}
+
+#apple {
+  width: 82px;
+  height: 80px;
+  background: rgb(255, 83, 15);
+  background: radial-gradient(
+    circle,
+    rgba(255, 83, 15, 1) 0%,
+    rgba(167, 213, 104, 1) 100%
+  );
+  border-radius: 150px;
+  top: 508px;
+  left: 183px;
+  position: absolute;
+}
+
+#pot {
+  width: 79px;
+  height: 89px;
+  background: rgb(241, 240, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(241, 240, 255, 1) 0%,
+    rgba(179, 179, 198, 1) 76%,
+    rgba(233, 251, 255, 1) 100%
+  );
+  border: 0;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  top: 481px;
+  left: 307px;
+  position: absolute;
+}
+
+#handle {
+  width: 18px;
+  height: 18px;
+  background: rgb(201, 203, 211);
+  border-radius: 150px;
+  top: 465px;
+  left: 338px;
+  position: absolute;
+}
+
+#potmouse {
+  border-radius: 22% 78% 38% 62% / 0% 99% 1% 100%;
+  width: 50px;
+  height: 40px;
+  background: rgb(201, 203, 211);
+
+  top: 500px;
+  left: 260px;
+  position: absolute;
+}
+
+#righthandle {
+  width: 72px;
+  height: 80px;
+  background: rgb(201, 203, 211);
+  border-radius: 0 150px 150px 0;
+
+  top: 480px;
+  left: 340px;
+  position: absolute;
+}
+
+#righthandle2 {
+  width: 60px;
+  height: 60px;
+  background: rgb(255, 255, 255);
+  border-radius: 0 150px 150px 0;
+
+  top: 490px;
+  left: 340px;
+  position: absolute;
+}
+
+#angpanghead {
+  border-radius: 70% 78% 90% 80%;
+  width: 71px;
+  height: 66px;
+  background: rgb(255, 230, 198);
+  top: 452px;
+  left: 126px;
+  position: absolute;
+}
+
+#angpangbody {
+  border-radius: 24% 27% 22% 15% / 50% 64% 19% 21%;
+  width: 71px;
+  height: 66px;
+  background: rgb(255, 0, 0);
+  top: 460px;
+  left: 126px;
+  position: absolute;
+}
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/
