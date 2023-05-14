@@ -124,3 +124,19 @@ body {
   align-items: center;
   margin-bottom: 100px;
 }
+
+.tarottw {
+  position: relative;
+  top: 0%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* hide the text by default */
+  background-color: green; /* add a semi-transparent background */
+  padding: 20px;
+  color: #fff;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tarot:hover .tarottw {
+  opacity: 1; /* show the text on hover */
+}
