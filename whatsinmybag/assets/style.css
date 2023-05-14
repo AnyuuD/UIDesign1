@@ -16,7 +16,7 @@ img {
 }
 
 body {
-  margin: 50px;
+  margin: 100px;
 }
 
 .tissue {
@@ -25,6 +25,22 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
+}
+
+.tissuetw {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* hide the text by default */
+  background-color: green; /* add a semi-transparent background */
+  padding: 20px;
+  color: #fff;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tissue:hover .tissuetw {
+  opacity: 1; /* show the text on hover */
 }
 
 .perioe {
@@ -48,13 +64,29 @@ body {
 
 .perioe:hover .overlay {
   opacity: 1;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
-.tarot {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 100px;
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-10px, 0);
+  }
+  40% {
+    transform: translate(10px, 0);
+  }
+  60% {
+    transform: translate(-10px, 0);
+  }
+  80% {
+    transform: translate(10px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .mac {
@@ -65,23 +97,30 @@ body {
   height: 200px;
 }
 
-.text-wrapper {
+.mactw {
   position: relative;
   top: 0%;
   left: 30%;
   transform: translate(-50%, -50%);
   opacity: 0; /* hide the text by default */
-  background-color: rgba(0, 0, 0, 0.7); /* add a semi-transparent background */
-  padding: 10px;
+  background-color: green; /* add a semi-transparent background */
+  padding: 20px;
   color: #fff;
   transition: opacity 0.3s ease-in-out;
 }
 
-.mac:hover .text-wrapper {
+.mac:hover .mactw {
   opacity: 1; /* show the text on hover */
 }
 
 .mac:hover .macimg {
   transform: rotate(10deg) scale(1.5);
   transition: transform 0.3s ease;
+}
+
+.tarot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
 }
