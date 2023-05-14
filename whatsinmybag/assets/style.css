@@ -1,0 +1,87 @@
+h1 {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  line-height: 1.5;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+}
+
+body {
+  margin: 50px;
+}
+
+.tissue {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.perioe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.perioe .overlay {
+  position: absolute;
+  top: 100;
+  left: 100;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  width: 70px;
+  height: auto;
+  margin: 10px;
+}
+
+.perioe:hover .overlay {
+  opacity: 1;
+}
+
+.tarot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.mac {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  height: 200px;
+}
+
+.text-wrapper {
+  position: relative;
+  top: 0%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* hide the text by default */
+  background-color: rgba(0, 0, 0, 0.7); /* add a semi-transparent background */
+  padding: 10px;
+  color: #fff;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.mac:hover .text-wrapper {
+  opacity: 1; /* show the text on hover */
+}
+
+.mac:hover .macimg {
+  transform: rotate(10deg) scale(1.5);
+  transition: transform 0.3s ease;
+}
