@@ -97,6 +97,11 @@ body {
   height: 200px;
 }
 
+.macimg {
+  width: 300px;
+  height: auto;
+}
+
 .mactw {
   position: relative;
   top: 0%;
@@ -139,4 +144,31 @@ body {
 
 .tarot:hover .tarottw {
   opacity: 1; /* show the text on hover */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.item {
+  flex: 1 0 200px;
+  height: 200px;
+  /*  background-color: #ccc; */
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item:hover {
+  display: grid;
+
+  z-index: 1;
+}
+
+.container:hover .item {
+  flex: 0 0 20%;
 }
