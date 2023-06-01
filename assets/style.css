@@ -68,3 +68,21 @@ body.darkmode {
 body.darkmode button {
   color: white;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  #left-column {
+    padding: 0px;
+  }
+  h1,
+  p {
+    margin-bottom: 0px;
+  }
+
+  ul,
+  ol {
+    margin-left: 0px;
+  }
+}
