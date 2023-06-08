@@ -3,18 +3,37 @@
   <head>
     <title>Taste something new</title>
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Rubik+Puddles&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1>TASTE SOMETHING NEW</h1>
-    <p class="oh">Oh! Gusteau is right, ummm, yea amazing.</p>
+    <p class="oh">Oh! Gusteau is right,</p>
+
+    <button
+      class="button-with-animated-cursor"
+      onclick="generateRandomImages()"
+    >
+      ummm, yea amazing.
+    </button>
+    <div class="cursor"></div>
     <p class="each">
-      Each foods flavour was totally unique, but combine one flavour with
-      another and something new was created.
+      Each foods flavour was totally unique, <br />
+      but combine one flavour with another and something new was created.
     </p>
-    <button onclick="generateRandomImages()">Generate</button>
+
     <div class="image-section" id="imageSection1"></div>
     <div class="image-section" id="imageSection2"></div>
-    <div id="messageSection" class="message-section"></div>
+
+    <div id="searchSection">
+      <input type="text" id="searchInput" placeholder="Enter search keywords" />
+      <button onclick="searchImages()">Search</button>
+    </div>
 
     <script src="assets/script.js"></script>
   </body>

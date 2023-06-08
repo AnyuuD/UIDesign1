@@ -1,7 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 10px;
+  line-height: normal;
 }
 
 :root {
@@ -26,30 +27,93 @@ body {
   }
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik+Puddles&display=swap");
+
 h1 {
   font-size: var(--font-size-lg);
   text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
 }
 
 p {
   text-align: center;
+  line-height: normal;
 }
 
-p .oh {
-  color: chartreuse;
+.oh {
+  font-size: var(--font-size-sm);
+  color: rgb(47, 27, 27);
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+.ummm {
+  font-size: var(--font-size-md);
+  color: rgb(255, 0, 0);
+  font-family: "Rubik Puddles", cursive;
+  line-height: 0;
+}
+
+.each {
+  font-size: var(--font-size-sm);
+  color: rgb(47, 27, 27);
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
 }
 
 button {
   display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 18px;
-  background-color: lime;
+  margin: 0px auto;
+  background: none;
+  border: none;
+  font-size: var(--font-size-md);
+  color: rgb(255, 0, 0);
+  font-family: "Rubik Puddles", cursive;
+  line-height: 0;
+}
+
+.button-with-animated-cursor {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: var(--font-size-md);
+  color: rgb(255, 0, 0);
+  font-family: "Rubik Puddles", cursive;
+  line-height: 0;
+  cursor: none;
+  position: relative;
+}
+
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  animation-name: cursorAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes cursorAnimation {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
 }
 
 .image-section {
   justify-content: center;
   width: 50%;
+  height: auto;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -57,8 +121,8 @@ button {
 }
 
 .image-section img {
-  width: 100%; /* Set the maximum width of the images to 50% of the image section */
-  max-height: auto; /* Set the maximum height of the images to 100% of the image section */
+  max-width: 100%; /* Set the maximum width of the images to 50% of the image section */
+  max-height: 50%; /* Set the maximum height of the images to 100% of the image section */
   object-fit: cover;
   justify-content: center;
   align-items: center;
