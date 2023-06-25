@@ -114,6 +114,30 @@ body {
   position: absolute;
 }
 
+.flower {
+  width: 48px;
+  height: 32px;
+  background: #ff9bbb;
+  border: 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  top: 291px;
+  left: 233px;
+  transform: rotate(137deg);
+  position: absolute;
+}
+.stem {
+  width: 4px;
+  height: 59px;
+  background: #0d9a45;
+  border: 0;
+  top: 336px;
+  left: 293px;
+  position: absolute;
+}
+
 .rhombus {
   width: 0px;
   height: 0px;
@@ -240,7 +264,7 @@ body {
   width: 71px;
   height: 66px;
   background: rgb(255, 230, 198);
-  top: 452px;
+  top: 400px;
   left: 126px;
   position: absolute;
 }
@@ -255,6 +279,54 @@ body {
   position: absolute;
 }
 
+#angpangleg {
+  border-radius: 48%;
+  width: 91px;
+  height: 35px;
+  background: rgb(255, 0, 0);
+  top: 519px;
+  left: 99px;
+  position: absolute;
+}
+
+#angpangfoot {
+  border-radius: 100%;
+  width: 39px;
+  height: 44px;
+  background: rgb(255, 255, 11);
+  top: 512px;
+  left: 76px;
+  position: absolute;
+}
+
+#angpanghand {
+  border-radius: 100%;
+  width: 39px;
+  height: 34px;
+  background: rgb(255, 255, 11);
+  top: 482px;
+  left: 150px;
+  position: absolute;
+}
+#angpangface {
+  border-radius: 100%;
+  width: 24px;
+  height: 34px;
+  background: rgb(255, 146, 4);
+  top: 422px;
+  left: 120px;
+  position: absolute;
+}
+
+#banana {
+  border-radius: 100%;
+  width: 75px;
+  height: 34px;
+  background: rgb(255 225 6);
+  top: 448px;
+  left: 187px;
+  position: absolute;
+}
 /* animations */
 
 /*
