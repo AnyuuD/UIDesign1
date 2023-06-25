@@ -55,60 +55,67 @@ h1 {
   flex-wrap: wrap;
 }
 
-.ascii {
+.circle {
   display: flex;
   width: 162px;
   height: 163px;
   flex-shrink: 0;
   border-radius: 163px;
-  background: #88ff94;
   justify-content: center;
   align-items: center;
+}
+
+.ascii {
+  background: #88ff94;
 }
 
 .still {
-  display: flex;
-  width: 162px;
-  height: 163px;
-  flex-shrink: 0;
-  border-radius: 163px;
   background: #7bf9f7;
-  justify-content: center;
-  align-items: center;
 }
 
 .p1 {
-  display: flex;
-  width: 162px;
-  height: 163px;
-  flex-shrink: 0;
-  border-radius: 163px;
   background: #ffe977;
-  justify-content: center;
-  align-items: center;
 }
 .bag {
-  display: flex;
-  width: 162px;
-  height: 163px;
-  flex-shrink: 0;
-  border-radius: 163px;
   background: #62c95e;
-  justify-content: center;
-  align-items: center;
 }
 
 .p2 {
-  display: flex;
-  width: 162px;
-  height: 163px;
-  flex-shrink: 0;
-  border-radius: 163px;
   background: #ff6d59;
-  justify-content: center;
   align-items: flex-start;
 }
+.alt-box {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  opacity: 0;
+}
 
+.circle:hover .alt-box {
+  opacity: 1;
+}
+
+.circle:hover .alt-box .alt-text::before {
+  content: attr(alt);
+}
+
+.circle:hover {
+  animation: vibration 0.2s infinite;
+}
+@keyframes vibration {
+  from {
+    transform: scale(1.1) rotate(1deg);
+  }
+  to {
+    transform: scale(1.1) rotate(-1deg);
+  }
+}
 body {
   font-size: 22px;
   font-family: sans-serif;
@@ -147,7 +154,7 @@ button:hover {
 /*	DARK MODE STYLES GO HERE */
 
 body.darkmode {
-  background: black;
+  background: rgb(17, 16, 16);
   color: white;
 
   /*	redefine a CSS variable */
@@ -163,7 +170,7 @@ body.darkmode button {
 
 @media only screen and (max-width: 900px) {
   body {
-    background-color: rgb(238, 251, 255);
+    color: rgb(16, 15, 15);
   }
 
   #grid,
