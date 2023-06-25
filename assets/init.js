@@ -22,4 +22,22 @@ $(document).ready(function () {
   $("#darkmode").click(function () {
     $("body").toggleClass("darkmode");
   });
+
+  const darkModeButton = document.getElementById("darkmode");
+  const image1 = document.getElementById("image1");
+  const image2 = document.getElementById("image2");
+
+  let clickCount = 0;
+
+  darkModeButton.addEventListener("click", function () {
+    clickCount++;
+
+    if (clickCount % 2 === 1) {
+      image1.style.display = "block";
+      image2.style.display = "none";
+    } else {
+      image1.style.display = "none";
+      image2.style.display = "block";
+    }
+  });
 });
